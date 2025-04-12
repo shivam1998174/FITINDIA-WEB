@@ -418,6 +418,7 @@ body p {
 }
 .journey-form{
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .form-container {
     background: rgba(30, 30, 30, 0.037);
@@ -426,7 +427,6 @@ body p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .blog-section {
     text-align: center;
     padding: 40px 0;
@@ -502,7 +502,14 @@ body p {
     }
     .journey-container h1{
         padding-bottom: 10px;
-        text-align: left;
+        text-align: center;
+    }
+    .journey-container p{
+        text-align: center;
+    }
+    .journey-form {
+        width: 100%;
+        margin-top: 10px;
     }
 }
 @media (min-width: 501px) and (max-width: 768px){
@@ -525,6 +532,9 @@ body p {
         align-items: center;
         text-align: center;
         padding: 1rem 0rem;
+    }
+    .card img {
+        height: 180px
     }
 }
 /* about page design end */
@@ -598,6 +608,92 @@ body p {
     font-weight: 600;
     font-style: italic;
     animation: scrollText 15s linear infinite;
+}
+.premium-section h1{
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.stat-title {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .label {
+    font-size: 1rem;
+    color: white;
+  }
+  .graph-container {
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
+  .graph-line {
+    width: 100%;
+    height: 100%;
+  }
+  .dot-label {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+    border: 3px solid white;
+    display: inline-block;
+  }
+  canvas {
+    width: 100%;
+    height: 100px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    color: #ff1e1e;
+  }
+  .chart-container {
+    position: relative;
+    height: 250px;
+  }
+
+
+
+.diet-plan-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.diet-plan-container-child{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.diet-plan-container-child:hover{
+    box-shadow: 0 4px 8px 0 rgba(95, 95, 95, 0.2), 0 6px 20px 0 rgba(110, 110, 110, 0.19);
+    transform: scale(1.1);
+}
+.diet-plan-img{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.diet-plan-img img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.diet-plan-container-child h1{
+    font-size: 1.3rem;
+    padding-top: 1rem;
 }
 
 @keyframes scrollText {
